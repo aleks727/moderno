@@ -1,24 +1,79 @@
-html {
-  box-sizing: border-box;
-}
+@import "_vars";
+@import "_global";
+@import "_fonts";
 
-*, *::after, *::before {
-  box-sizing: inherit;
-}
+.header {
+  &__top {
+  }
 
-a {
-  text-decoration: none;
-  display: inline-block;
-  color: inherit;
-}
+  &__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+  }
 
-li {
-  list-style: none;
-}
+  &__logo {
+  }
 
+  &__text {
+    margin-left: auto;
+    margin-right: 30px;
+    span {
+      color: $red;
+    }
+  }
+
+  &__phone {
+  }
+
+  &__box {
+  }
+
+  &__btn {
+    padding: 4px;
+    width: 72px;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  &__btn-login {
+    background-color: $green;
+  }
+
+  &__btn-register {
+    background-color: $red;
+    margin-left: 7px;
+  }
+
+  &__menu {
+    background-color: $bg;
+  }
+}
 .container {
-  max-width: 1030px;
-  padding: 0 15px;
-  margin: 0 auto;
 }
+.basket {
+}
+.menu {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  &__list {
+  }
 
+  &__link {
+    display: inline-block;
+    & + & {
+      margin-left: 35px;
+    }
+  }
+  a {
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    color: #fff;
+  }
+}
