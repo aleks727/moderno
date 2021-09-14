@@ -374,7 +374,43 @@
     color: #b0bec5;
   }
 }
-.container {
-}
-.title {
+
+// author==========================================================
+
+.author {
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: cover;
+  min-height: 761px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__box {
+    max-width: 650px;
+    width: 100%;
+    min-height: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $green;
+  }
+
+  &__title {
+    font-size: 30px;
+    line-height: 36px;
+    color: #fff;
+    max-width: 275px;
+    margin-right: 45px;
+    text-align: center;
+    span {
+      font-family: "Roboto-Bold", sans-serif;
+    }
+  }
+
+  &__link {
+    padding: 20px 40px;
+    background-color: #fff;
+    font-size: 18px;
+    color: $bg;
+  }
 }
