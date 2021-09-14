@@ -27,9 +27,28 @@ li {
   margin: 0 auto;
 }
 
+.container-fluid {
+  max-width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
 body {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 15px;
   line-height: 24px;
   color: $text;
+}
+.title {
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 36px;
+  line-height: 60px;
+  color: $bg;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.rate-star {
+  display: inline-block;
+  margin-right: 13px;
 }
