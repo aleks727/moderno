@@ -319,3 +319,62 @@
     cursor: pointer;
   }
 }
+
+// advantages=================================================
+
+.advantages {
+  padding: 100px 0;
+  background-color: $bg;
+  &__title {
+    color: #fff;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 370px;
+    text-align: center;
+    &:hover {
+      .advantages__item-images {
+        background-color: $green;
+        g {
+          fill: #fff;
+        }
+      }
+      .advantages__item-title {
+        color: $green;
+      }
+    }
+  }
+
+  &__item-images {
+    width: 114px;
+    height: 114px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px;
+    transition: all 0.5s;
+  }
+
+  &__item-title {
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 25px;
+    transition: all 0.5s;
+  }
+
+  &__item-text {
+    color: #b0bec5;
+  }
+}
+.container {
+}
+.title {
+}
