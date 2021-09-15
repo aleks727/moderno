@@ -320,7 +320,7 @@
   }
 }
 
-// advantages=================================================
+// advantages =================================================
 
 .advantages {
   padding: 100px 0;
@@ -375,7 +375,7 @@
   }
 }
 
-// author==========================================================
+// author ==========================================================
 
 .author {
   background-repeat: no-repeat;
@@ -415,7 +415,7 @@
   }
 }
 
-// tutorial=========================================================
+// tutorial =========================================================
 
 .tutorial {
   padding: 60px 0 120px;
@@ -447,5 +447,178 @@
     background-color: #f8f8f8;
     text-align: center;
     padding: 30px 10px;
+  }
+}
+
+// footer =============================================================
+
+.footer {
+  background-color: $bg;
+  padding: 110px 0 30px;
+  &__content {
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 90px;
+  }
+
+  &__item {
+    max-width: 270px;
+    width: 100%;
+    &-menu {
+      max-width: 220px;
+      width: 100%;
+    }
+  }
+
+  &__item-title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #fff;
+    padding-bottom: 22px;
+    margin-bottom: 25px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 2px;
+      width: 51px;
+      height: 3px;
+      background-color: $green;
+    }
+  }
+
+  &__item-text {
+    color: #b7c3c8;
+    margin-bottom: 30px;
+  }
+
+  &__info {
+    font-family: "Lato-Semibold", sans-serif;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 18px;
+    padding-left: 30px;
+    position: relative;
+    &::before {
+      content: "\f041";
+      font-family: "icomoon";
+      color: $green;
+      font-size: 18px;
+      position: absolute;
+      left: 0;
+    }
+    &-phone {
+      &::before {
+        content: "\f095";
+      }
+    }
+  }
+
+  &__item-list {
+    a {
+      color: #b7c3c8;
+      padding-left: 20px;
+      margin-bottom: 16px;
+      position: relative;
+      &::before {
+        content: "\f105";
+        font-family: "icomoon";
+        position: absolute;
+        color: $green;
+        font-size: 18px;
+        left: 0;
+      }
+    }
+  }
+
+  &__social-link {
+    margin-bottom: 35px;
+    li {
+      display: inline-block;
+      & + li {
+        margin-left: 7px;
+      }
+    }
+    a {
+      width: 28px;
+      height: 28px;
+      background-image: url(../images/css_sprites.png);
+    }
+  }
+
+  .link-facebook {
+    background-position: -10px -10px;
+  }
+  .link-twitter {
+    background-position: -58px -10px;
+  }
+  .link-youtube {
+    background-position: -10px -58px;
+  }
+  .link-pinterest {
+    background-position: -58px -58px;
+  }
+  .link-linkedin {
+    background-position: -106px -10px;
+  }
+
+  &__form {
+    position: relative;
+    input {
+      border: none;
+      background-color: #2f3c43;
+      display: block;
+      height: 40px;
+      width: 70%;
+      color: #fff;
+      font-size: 14px;
+      padding-left: 13px;
+      padding-right: 50px;
+      outline: none;
+    }
+    ::placeholder {
+      color: #697378;
+    }
+    button {
+      position: absolute;
+      padding: 0;
+      bottom: 0;
+      right: 15px;
+      height: 40px;
+      width: 43px;
+      border: none;
+      background-color: $green;
+      cursor: pointer;
+      &::before {
+        content: "\f124";
+        position: absolute;
+        top: 10px;
+        left: 12px;
+        font-family: "icomoon";
+        font-size: 20px;
+        color: #fff;
+      }
+    }
+  }
+
+  &__form-title {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  &__copy {
+    padding-top: 25px;
+    border-top: 1px solid #424d53;
+  }
+
+  &__copy-text {
+    text-align: center;
+    color: #919699;
   }
 }
